@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>Products app - Nikola Kristanović</title>
+		<meta charset="utf-8">
+		<meta name="autor" content="Nikola Kristanović">
+		<meta name="datum" content="16.02.2021">
+		<link href="products.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="products.js"></script>
+	</head>
+	
+	<body>
+			<h1>Products App</h1>
+			
+		<div class="section">
+		
+			<form div="products">
+				<label for="product">Product title</label><br>
+				<input id="product" name="product" class="product" type="text" maxlength="50" size="50"/>
+				<button onclick="addproduct()" type="button"  class="btn-add">Add product</button>
+			</form>
+			
+			<div id="show">
+			
+				<div class="num-prod">
+					<p>Number of products:<span id="counter"> 0</span></p> 
+					<a href="" class="delete" onclick="return confirm('Are you sure that you want remove all products?')">Remove all products</a>
+				</div>
+			
+				<div class="list">
+					<ul id="list">
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	<body>
+</html>
